@@ -9,8 +9,11 @@ if F <=0:
 if F > 0:
     while True:
         i = i + 1
+        if N % i !=0:
+            i = i + 1
         if N % i ==0 and i !=N:
             N = N + 1
+            i = 1
         if N % i ==0 and i ==N:
             F = F - 1
             i = 1
