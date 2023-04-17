@@ -1,5 +1,6 @@
 print("Quantos primos?")
 F = int(input("> "))
+O = F
 N = 2
 i = 1
 Lista = []
@@ -17,5 +18,6 @@ if F > 0:
             if F > 0:
                 N = N + 1
             if F <=0:
-                print(Lista)
+                F = O
+                print((F),Lista)
                 break
